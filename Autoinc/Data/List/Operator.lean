@@ -1,0 +1,10 @@
+import Autoinc.Data.List.Operator.Length
+import Autoinc.Data.List.Operator.Append
+import Autoinc.Data.List.Operator.Cons
+import Autoinc.Data.List.Operator.Head
+import Autoinc.Data.List.Operator.Tail
+import Autoinc.Data.List.Operator.Take
+import Autoinc.Data.List.Operator.Reverse
+import Autoinc.Data.List.Operator.Drop
+import Autoinc.Data.List.Operator.Any
+import Autoinc.Data.List.Operator.All

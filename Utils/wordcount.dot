@@ -1,0 +1,44 @@
+digraph WordCountU {
+    rankdir=LR;
+    node [shape=box, style="rounded,filled", fontname="Courier", fillcolor=lavender];
+    edge [fontname="Courier", fontsize=11, fontcolor=darkblue];
+
+    // --- Row 1 Nodes ---
+    Input [label="Input buffer", fillcolor=lightgrey];
+    ToLower [label="String::to_lowercase()"];
+    Split [label="String::split(delimiter=\" \")"];
+
+    // --- Row 2 Nodes ---
+    FilterEmpty [label="Iterator::filter(fn=not_empty)"];
+    Count [label="Iterator::count()"];
+    Output [label="Result", fillcolor=lightgreen];
+
+    // --- Dataflow Edges ---
+    
+    // Top Row: L -> R
+    Input -> ToLower [label=" \"Hello world  HELLO\""];
+    ToLower -> Split [label=" \"hello world  hello\""];
+    
+    // The "U-Turn" (Vertical drop on the right)
+    Split -> FilterEmpty [label=" [\"hello\", \"world\", \"\", \"hello\"]"];
+    
+    // Bottom Row: R -> L
+    // We define the logic Filter -> Count -> Output
+    FilterEmpty -> Count [label=" [\"hello\", \"world\", \"hello\"]"];
+    Count -> Output [label=" 3"];
+
+    // --- Layout Constraints ---
+    
+    // Row 1 Order: Input is leftmost, Split is rightmost
+    { rank=same; Input; ToLower; Split; }
+    Input -> ToLower -> Split [style=invis];
+
+    // Row 2 Order: FilterEmpty is rightmost, Output is leftmost
+    { rank=same; FilterEmpty; Count; Output; }
+    Output -> Count -> FilterEmpty [style=invis]; 
+
+    // Vertical Alignments (aligns columns)
+    Input -> Output [style=invis];
+    ToLower -> Count [style=invis];
+    Split -> FilterEmpty [style=invis];
+}

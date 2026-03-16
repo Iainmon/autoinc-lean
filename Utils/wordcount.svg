@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="775pt" height="275pt" viewBox="0.00 0.00 775.00 275.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 271)">
+<title>WordCountU</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-271 770.51,-271 770.51,4 -4,4"/>
+<!-- Input -->
+<g id="node1" class="node">
+<title>Input</title>
+<path fill="lightgrey" stroke="black" d="M172.03,-267C172.03,-267 79.21,-267 79.21,-267 73.21,-267 67.21,-261 67.21,-255 67.21,-255 67.21,-243 67.21,-243 67.21,-237 73.21,-231 79.21,-231 79.21,-231 172.03,-231 172.03,-231 178.03,-231 184.03,-237 184.03,-243 184.03,-243 184.03,-255 184.03,-255 184.03,-261 178.03,-267 172.03,-267"/>
+<text xml:space="preserve" text-anchor="middle" x="125.62" y="-244.8" font-family="Courier,monospace" font-size="14.00">Input buffer</text>
+</g>
+<!-- ToLower -->
+<g id="node2" class="node">
+<title>ToLower</title>
+<path fill="lavender" stroke="black" d="M214.03,-195C214.03,-195 37.2,-195 37.2,-195 31.2,-195 25.2,-189 25.2,-183 25.2,-183 25.2,-171 25.2,-171 25.2,-165 31.2,-159 37.2,-159 37.2,-159 214.03,-159 214.03,-159 220.03,-159 226.03,-165 226.03,-171 226.03,-171 226.03,-183 226.03,-183 226.03,-189 220.03,-195 214.03,-195"/>
+<text xml:space="preserve" text-anchor="middle" x="125.62" y="-172.8" font-family="Courier,monospace" font-size="14.00">String::to_lowercase()</text>
+</g>
+<!-- Input&#45;&gt;ToLower -->
+<g id="edge1" class="edge">
+<title>Input-&gt;ToLower</title>
+<path fill="none" stroke="black" d="M125.62,-230.59C125.62,-223.28 125.62,-214.69 125.62,-206.56"/>
+<polygon fill="black" stroke="black" points="129.12,-206.68 125.62,-196.68 122.12,-206.68 129.12,-206.68"/>
+<text xml:space="preserve" text-anchor="middle" x="116.02" y="-209.7" font-family="Courier,monospace" font-size="11.00" fill="darkblue"> "Hello world  HELLO"</text>
+</g>
+<!-- Input&#45;&gt;ToLower -->
+<!-- Output -->
+<g id="node6" class="node">
+<title>Output</title>
+<path fill="lightgreen" stroke="black" d="M653.7,-36C653.7,-36 611.29,-36 611.29,-36 605.29,-36 599.29,-30 599.29,-24 599.29,-24 599.29,-12 599.29,-12 599.29,-6 605.29,0 611.29,0 611.29,0 653.7,0 653.7,0 659.7,0 665.7,-6 665.7,-12 665.7,-12 665.7,-24 665.7,-24 665.7,-30 659.7,-36 653.7,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="632.49" y="-13.8" font-family="Courier,monospace" font-size="14.00">Result</text>
+</g>
+<!-- Input&#45;&gt;Output -->
+<!-- Split -->
+<g id="node3" class="node">
+<title>Split</title>
+<path fill="lavender" stroke="black" d="M239.24,-123C239.24,-123 12,-123 12,-123 6,-123 0,-117 0,-111 0,-111 0,-99 0,-99 0,-93 6,-87 12,-87 12,-87 239.24,-87 239.24,-87 245.24,-87 251.24,-93 251.24,-99 251.24,-99 251.24,-111 251.24,-111 251.24,-117 245.24,-123 239.24,-123"/>
+<text xml:space="preserve" text-anchor="middle" x="125.62" y="-100.8" font-family="Courier,monospace" font-size="14.00">String::split(delimiter=" ")</text>
+</g>
+<!-- ToLower&#45;&gt;Split -->
+<g id="edge2" class="edge">
+<title>ToLower-&gt;Split</title>
+<path fill="none" stroke="black" d="M125.62,-158.59C125.62,-151.28 125.62,-142.69 125.62,-134.56"/>
+<polygon fill="black" stroke="black" points="129.12,-134.68 125.62,-124.68 122.12,-134.68 129.12,-134.68"/>
+<text xml:space="preserve" text-anchor="middle" x="116.02" y="-137.7" font-family="Courier,monospace" font-size="11.00" fill="darkblue"> "hello world  hello"</text>
+</g>
+<!-- ToLower&#45;&gt;Split -->
+<!-- Count -->
+<g id="node5" class="node">
+<title>Count</title>
+<path fill="lavender" stroke="black" d="M699.9,-108C699.9,-108 565.08,-108 565.08,-108 559.08,-108 553.08,-102 553.08,-96 553.08,-96 553.08,-84 553.08,-84 553.08,-78 559.08,-72 565.08,-72 565.08,-72 699.9,-72 699.9,-72 705.9,-72 711.9,-78 711.9,-84 711.9,-84 711.9,-96 711.9,-96 711.9,-102 705.9,-108 699.9,-108"/>
+<text xml:space="preserve" text-anchor="middle" x="632.49" y="-85.8" font-family="Courier,monospace" font-size="14.00">Iterator::count()</text>
+</g>
+<!-- ToLower&#45;&gt;Count -->
+<!-- FilterEmpty -->
+<g id="node4" class="node">
+<title>FilterEmpty</title>
+<path fill="lavender" stroke="black" d="M754.51,-180C754.51,-180 510.47,-180 510.47,-180 504.47,-180 498.47,-174 498.47,-168 498.47,-168 498.47,-156 498.47,-156 498.47,-150 504.47,-144 510.47,-144 510.47,-144 754.51,-144 754.51,-144 760.51,-144 766.51,-150 766.51,-156 766.51,-156 766.51,-168 766.51,-168 766.51,-174 760.51,-180 754.51,-180"/>
+<text xml:space="preserve" text-anchor="middle" x="632.49" y="-157.8" font-family="Courier,monospace" font-size="14.00">Iterator::filter(fn=not_empty)</text>
+</g>
+<!-- Split&#45;&gt;FilterEmpty -->
+<g id="edge3" class="edge">
+<title>Split-&gt;FilterEmpty</title>
+<path fill="none" stroke="black" d="M196.19,-123.46C219.28,-128.96 245.23,-134.45 269.24,-138 340.41,-148.52 420.13,-154.43 486.63,-157.75"/>
+<polygon fill="black" stroke="black" points="486.37,-161.24 496.53,-158.23 486.71,-154.25 486.37,-161.24"/>
+<text xml:space="preserve" text-anchor="middle" x="374.86" y="-160.45" font-family="Courier,monospace" font-size="11.00" fill="darkblue"> ["hello", "world", "", "hello"]</text>
+</g>
+<!-- Split&#45;&gt;FilterEmpty -->
+<!-- FilterEmpty&#45;&gt;Count -->
+<g id="edge4" class="edge">
+<title>FilterEmpty-&gt;Count</title>
+<path fill="none" stroke="black" d="M632.49,-143.59C632.49,-136.28 632.49,-127.69 632.49,-119.56"/>
+<polygon fill="black" stroke="black" points="635.99,-119.68 632.49,-109.68 628.99,-119.68 635.99,-119.68"/>
+<text xml:space="preserve" text-anchor="middle" x="622.89" y="-122.7" font-family="Courier,monospace" font-size="11.00" fill="darkblue"> ["hello", "world", "hello"]</text>
+</g>
+<!-- Count&#45;&gt;FilterEmpty -->
+<!-- Count&#45;&gt;Output -->
+<g id="edge5" class="edge">
+<title>Count-&gt;Output</title>
+<path fill="none" stroke="black" d="M632.49,-71.59C632.49,-64.28 632.49,-55.69 632.49,-47.56"/>
+<polygon fill="black" stroke="black" points="635.99,-47.68 632.49,-37.68 628.99,-47.68 635.99,-47.68"/>
+<text xml:space="preserve" text-anchor="middle" x="622.89" y="-50.7" font-family="Courier,monospace" font-size="11.00" fill="darkblue"> 3</text>
+</g>
+<!-- Output&#45;&gt;Count -->
+</g>
+</svg>

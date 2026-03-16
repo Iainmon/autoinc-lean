@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="215pt" height="620pt" viewBox="0.00 0.00 215.00 620.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 616)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-616 211,-616 211,4 -4,4"/>
+<!-- input_0_nat -->
+<g id="node1" class="node">
+<title>input_0_nat</title>
+<text xml:space="preserve" text-anchor="middle" x="36" y="-571.8" font-family="Times,serif" font-size="14.00">input_0_nat</text>
+</g>
+<!-- drop_0 -->
+<g id="node4" class="node">
+<title>drop_0</title>
+<polygon fill="none" stroke="black" points="117,-504 45,-504 45,-432 117,-432 117,-504"/>
+<text xml:space="preserve" text-anchor="middle" x="81" y="-463.8" font-family="Times,serif" font-size="14.00">drop_0</text>
+</g>
+<!-- input_0_nat&#45;&gt;drop_0 -->
+<g id="edge1" class="edge">
+<title>input_0_nat-&gt;drop_0</title>
+<path fill="none" stroke="black" d="M50.73,-540.29C54.23,-532.05 58.02,-523.14 61.69,-514.49"/>
+<polygon fill="black" stroke="black" points="64.8,-516.12 65.49,-505.54 58.36,-513.38 64.8,-516.12"/>
+</g>
+<!-- input_1_list -->
+<g id="node2" class="node">
+<title>input_1_list</title>
+<text xml:space="preserve" text-anchor="middle" x="126" y="-571.8" font-family="Times,serif" font-size="14.00">input_1_list</text>
+</g>
+<!-- input_1_list&#45;&gt;drop_0 -->
+<g id="edge2" class="edge">
+<title>input_1_list-&gt;drop_0</title>
+<path fill="none" stroke="black" d="M111.27,-540.29C107.77,-532.05 103.98,-523.14 100.31,-514.49"/>
+<polygon fill="black" stroke="black" points="103.64,-513.38 96.51,-505.54 97.2,-516.12 103.64,-513.38"/>
+</g>
+<!-- input_2_nat -->
+<g id="node3" class="node">
+<title>input_2_nat</title>
+<text xml:space="preserve" text-anchor="middle" x="171" y="-355.8" font-family="Times,serif" font-size="14.00">input_2_nat</text>
+</g>
+<!-- drop_1 -->
+<g id="node6" class="node">
+<title>drop_1</title>
+<polygon fill="none" stroke="black" points="162,-288 90,-288 90,-216 162,-216 162,-288"/>
+<text xml:space="preserve" text-anchor="middle" x="126" y="-247.8" font-family="Times,serif" font-size="14.00">drop_1</text>
+</g>
+<!-- input_2_nat&#45;&gt;drop_1 -->
+<g id="edge5" class="edge">
+<title>input_2_nat-&gt;drop_1</title>
+<path fill="none" stroke="black" d="M156.27,-324.29C152.77,-316.05 148.98,-307.14 145.31,-298.49"/>
+<polygon fill="black" stroke="black" points="148.64,-297.38 141.51,-289.54 142.2,-300.12 148.64,-297.38"/>
+</g>
+<!-- reverse_0 -->
+<g id="node5" class="node">
+<title>reverse_0</title>
+<polygon fill="none" stroke="black" points="117,-396 45,-396 45,-324 117,-324 117,-396"/>
+<text xml:space="preserve" text-anchor="middle" x="81" y="-355.8" font-family="Times,serif" font-size="14.00">reverse_0</text>
+</g>
+<!-- drop_0&#45;&gt;reverse_0 -->
+<g id="edge3" class="edge">
+<title>drop_0-&gt;reverse_0</title>
+<path fill="none" stroke="black" d="M81,-431.7C81,-423.93 81,-415.57 81,-407.43"/>
+<polygon fill="black" stroke="black" points="84.5,-407.66 81,-397.66 77.5,-407.66 84.5,-407.66"/>
+</g>
+<!-- reverse_0&#45;&gt;drop_1 -->
+<g id="edge4" class="edge">
+<title>reverse_0-&gt;drop_1</title>
+<path fill="none" stroke="black" d="M95.98,-323.7C99.4,-315.66 103.08,-307 106.65,-298.59"/>
+<polygon fill="black" stroke="black" points="109.8,-300.11 110.49,-289.54 103.36,-297.37 109.8,-300.11"/>
+</g>
+<!-- reverse_1 -->
+<g id="node7" class="node">
+<title>reverse_1</title>
+<polygon fill="none" stroke="black" points="162,-180 90,-180 90,-108 162,-108 162,-180"/>
+<text xml:space="preserve" text-anchor="middle" x="126" y="-139.8" font-family="Times,serif" font-size="14.00">reverse_1</text>
+</g>
+<!-- drop_1&#45;&gt;reverse_1 -->
+<g id="edge6" class="edge">
+<title>drop_1-&gt;reverse_1</title>
+<path fill="none" stroke="black" d="M126,-215.7C126,-207.93 126,-199.57 126,-191.43"/>
+<polygon fill="black" stroke="black" points="129.5,-191.66 126,-181.66 122.5,-191.66 129.5,-191.66"/>
+</g>
+<!-- all -->
+<g id="node8" class="node">
+<title>all</title>
+<polygon fill="none" stroke="black" points="162,-72 90,-72 90,0 162,0 162,-72"/>
+<text xml:space="preserve" text-anchor="middle" x="126" y="-31.8" font-family="Times,serif" font-size="14.00">all</text>
+</g>
+<!-- reverse_1&#45;&gt;all -->
+<g id="edge7" class="edge">
+<title>reverse_1-&gt;all</title>
+<path fill="none" stroke="black" d="M126,-107.7C126,-99.93 126,-91.57 126,-83.43"/>
+<polygon fill="black" stroke="black" points="129.5,-83.66 126,-73.66 122.5,-83.66 129.5,-83.66"/>
+</g>
+</g>
+</svg>

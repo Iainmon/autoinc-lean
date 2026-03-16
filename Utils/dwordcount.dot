@@ -1,0 +1,44 @@
+digraph WordCountU {
+    rankdir=LR;
+    node [shape=box, style="rounded,filled", fontname="Courier", fillcolor=lavender];
+    edge [fontname="Courier", fontsize=15, fontcolor=darkblue];
+
+    // --- Row 1 Nodes ---
+    Input [label="Input change", fillcolor=lightgrey];
+    ToLower [label="String::Δto_lowercase()"];
+    Split [label="String::Δsplit(delimiter=\" \")"];
+
+    // --- Row 2 Nodes ---
+    FilterEmpty [label="Iterator::Δfilter(fn=not_empty)"];
+    Count [label="Iterator::Δcount()"];
+    Output [label="Result change", fillcolor=lightgreen];
+
+    // --- Dataflow Edges ---
+    
+    // Top Row: L -> R
+    Input -> ToLower [label=" append \" \""];
+    ToLower -> Split [label=" append \" \""];
+    
+    // The "U-Turn" (Vertical drop on the right)
+    Split -> FilterEmpty [label=" [\" \"]"];
+    
+    // Bottom Row: R -> L
+    // We define the logic Filter -> Count -> Output
+    FilterEmpty -> Count [label="  append []"];
+    Count -> Output [label="      +0"];
+
+    // --- Layout Constraints ---
+    
+    // Row 1 Order: Input is leftmost, Split is rightmost
+    { rank=same; Input; ToLower; Split; }
+    Input -> ToLower -> Split [style=invis];
+
+    // Row 2 Order: FilterEmpty is rightmost, Output is leftmost
+    { rank=same; FilterEmpty; Count; Output; }
+    Output -> Count -> FilterEmpty [style=invis]; 
+
+    // Vertical Alignments (aligns columns)
+    Input -> Output [style=invis];
+    ToLower -> Count [style=invis];
+    Split -> FilterEmpty [style=invis];
+}

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="215pt" height="404pt" viewBox="0.00 0.00 215.00 404.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-400 211,-400 211,4 -4,4"/>
+<!-- input_0_nat -->
+<g id="node1" class="node">
+<title>input_0_nat</title>
+<text xml:space="preserve" text-anchor="middle" x="36" y="-355.8" font-family="Times,serif" font-size="14.00">input_0_nat</text>
+</g>
+<!-- drop -->
+<g id="node4" class="node">
+<title>drop</title>
+<polygon fill="none" stroke="black" points="117,-288 45,-288 45,-216 117,-216 117,-288"/>
+<text xml:space="preserve" text-anchor="middle" x="81" y="-247.8" font-family="Times,serif" font-size="14.00">drop</text>
+</g>
+<!-- input_0_nat&#45;&gt;drop -->
+<g id="edge1" class="edge">
+<title>input_0_nat-&gt;drop</title>
+<path fill="none" stroke="black" d="M50.73,-324.29C54.23,-316.05 58.02,-307.14 61.69,-298.49"/>
+<polygon fill="black" stroke="black" points="64.8,-300.12 65.49,-289.54 58.36,-297.38 64.8,-300.12"/>
+</g>
+<!-- input_1_list -->
+<g id="node2" class="node">
+<title>input_1_list</title>
+<text xml:space="preserve" text-anchor="middle" x="126" y="-355.8" font-family="Times,serif" font-size="14.00">input_1_list</text>
+</g>
+<!-- input_1_list&#45;&gt;drop -->
+<g id="edge2" class="edge">
+<title>input_1_list-&gt;drop</title>
+<path fill="none" stroke="black" d="M111.27,-324.29C107.77,-316.05 103.98,-307.14 100.31,-298.49"/>
+<polygon fill="black" stroke="black" points="103.64,-297.38 96.51,-289.54 97.2,-300.12 103.64,-297.38"/>
+</g>
+<!-- input_2_nat -->
+<g id="node3" class="node">
+<title>input_2_nat</title>
+<text xml:space="preserve" text-anchor="middle" x="171" y="-247.8" font-family="Times,serif" font-size="14.00">input_2_nat</text>
+</g>
+<!-- take -->
+<g id="node5" class="node">
+<title>take</title>
+<polygon fill="none" stroke="black" points="162,-180 90,-180 90,-108 162,-108 162,-180"/>
+<text xml:space="preserve" text-anchor="middle" x="126" y="-139.8" font-family="Times,serif" font-size="14.00">take</text>
+</g>
+<!-- input_2_nat&#45;&gt;take -->
+<g id="edge3" class="edge">
+<title>input_2_nat-&gt;take</title>
+<path fill="none" stroke="black" d="M156.27,-216.29C152.77,-208.05 148.98,-199.14 145.31,-190.49"/>
+<polygon fill="black" stroke="black" points="148.64,-189.38 141.51,-181.54 142.2,-192.12 148.64,-189.38"/>
+</g>
+<!-- drop&#45;&gt;take -->
+<g id="edge4" class="edge">
+<title>drop-&gt;take</title>
+<path fill="none" stroke="black" d="M95.98,-215.7C99.4,-207.66 103.08,-199 106.65,-190.59"/>
+<polygon fill="black" stroke="black" points="109.8,-192.11 110.49,-181.54 103.36,-189.37 109.8,-192.11"/>
+</g>
+<!-- any -->
+<g id="node6" class="node">
+<title>any</title>
+<polygon fill="none" stroke="black" points="162,-72 90,-72 90,0 162,0 162,-72"/>
+<text xml:space="preserve" text-anchor="middle" x="126" y="-31.8" font-family="Times,serif" font-size="14.00">any</text>
+</g>
+<!-- take&#45;&gt;any -->
+<g id="edge5" class="edge">
+<title>take-&gt;any</title>
+<path fill="none" stroke="black" d="M126,-107.7C126,-99.93 126,-91.57 126,-83.43"/>
+<polygon fill="black" stroke="black" points="129.5,-83.66 126,-73.66 122.5,-83.66 129.5,-83.66"/>
+</g>
+</g>
+</svg>
