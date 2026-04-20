@@ -2,6 +2,7 @@ import Autoinc.Change
 import Autoinc.Operator
 import Autoinc.Data.List.Change
 
+namespace ΔList
 section Map
 
 variable {M} [Monad M]
@@ -18,5 +19,5 @@ variable {A ΔA B ΔB : Type}
     | .del i n => pure <| ΔList.del i n
     | .upd i Δxs => ΔList.upd i <$> List.mapM op.Δf Δxs
 
-
 end Map
+end ΔMap
