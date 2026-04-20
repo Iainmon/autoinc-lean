@@ -8,3 +8,4 @@ import Autoinc.Data.List.Operator.Reverse
 import Autoinc.Data.List.Operator.Drop
 import Autoinc.Data.List.Operator.Any
 import Autoinc.Data.List.Operator.All
+import Autoinc.Data.List.Operator.Map
