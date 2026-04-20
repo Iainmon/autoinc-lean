@@ -2,7 +2,7 @@ import Autoinc.Change
 import Autoinc.Operator
 import Autoinc.Data.List.Change
 
-namespace ΔList
+namespace ΔMap
 section Map
 
 variable {M} [Monad M]
