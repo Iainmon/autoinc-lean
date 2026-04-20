@@ -19,5 +19,6 @@ variable {A ΔA B ΔB : Type}
     | .del i n => pure <| ΔList.del i n
     | .upd i Δxs => ΔList.upd i <$> List.mapM op.Δf Δxs
 
+
 end Map
 end ΔMap
