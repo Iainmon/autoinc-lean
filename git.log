@@ -1,0 +1,48 @@
+commit 76787f433084daa4a3f0f43ca5f45a2f88a1a3d2
+Author: Iain Moncrief <moncrief@oregonstate.edu>
+Date:   Mon Apr 20 02:29:12 2026 -1000
+
+    Add initial definition for incremental List.map
+
+commit 23773d46e8550fa09e7c1432ea2c0db9cd46b242
+Author: Iain Moncrief <moncrief@oregonstate.edu>
+Date:   Mon Apr 20 02:08:42 2026 -1000
+
+    Add DeltaMap Namespace
+
+commit 172944ddca57b28618f6894f3d0db285bee9d198
+Author: Iain Moncrief <moncrief@oregonstate.edu>
+Date:   Mon Apr 20 02:08:19 2026 -1000
+
+    Add DeltaMap Namespace
+
+commit 27af78ea64425f4b4c218c930a26d32c7af89e65
+Author: Iain Moncrief <moncrief@oregonstate.edu>
+Date:   Mon Apr 20 01:52:26 2026 -1000
+
+    Add List.Map operator.
+
+commit cb2322eff17eb348ed05834ed2410d3468b4d530
+Author: Iain Moncrief <moncrief@oregonstate.edu>
+Date:   Mon Apr 20 01:18:02 2026 -1000
+
+    With the machine I'm working on, I can prove anything if you give me long enough...
+
+commit 5c631a9fce1a3ba5535659ab835c9035cb909313
+Author: Iain Moncrief <moncrief@oregonstate.edu>
+Date:   Mon Apr 20 01:02:13 2026 -1000
+
+    Compiles! Digraph notation exploration. On right track GT3.lean
+
+commit 8ee977326d1b7ce7d39d5c1ac60713f66818c4f1
+Author: Runqing Xu <runqingxu@hotmail.com>
+Date:   Mon Mar 16 13:00:41 2026 +0100
+
+    Release of Autoinc formalization in Lean
+
+commit d4ea9cb5c877b3bba7132b2e62ddee7804126696
+Author: Sebastian Erdweg <731053+seba--@users.noreply.github.com>
+Date:   Fri Feb 6 12:19:12 2026 +0100
+
+    Initial commit
+/Users/iainmoncrief/Documents/Github/autoinc-lean
